@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="icons/logomarca.png" type="image/x-icon">
+    <link rel="stylesheet" href="styleW.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px; 
+            position: fixed; 
+            height: 100vh; 
+            overflow-y: auto; 
+        }
+
+        .resume-section {
+            margin-left: 250px; 
+            padding: 20px;
+            flex-grow: 1; 
+            background-color: inherit; 
+        }
+
+        .resume-section iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="text-center">
+            <img src="images/Foto-Lucas.jpg" alt="Lucas Dominiski">
+            <h3>Lucas Dominiski</h3>
+            <div class="social-icons">
+                <a href="https://wa.me/qr/KVPC5HNCRRGUA1 " target="_blank">
+                    <img src="icons/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/_liox62_/" target="_blank">
+                    <img src="icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/Liox62" target="_blank">
+                    <img src="icons/github.png" alt="GitHub">
+                </a>
+            </div>
+            <nav class="nav flex-column mt-4">
+                <a class="nav-link" href="IndexEnW.html">
+                    <img src="icons/botao-de-inicio.png" alt="Home" class="menu-icon"> Home
+                </a>
+            </nav>
+        </div>
+
+        <div class="settings mt-auto text-center">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button" id="settingsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Configurações
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="settingsDropdown">
+                <li><a class="dropdown-item" href="TextureW.html">Language: Português</a></li>
+                <li><a class="dropdown-item" href="TextureEnW.html">Language: English</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="TextureEnW.html">Theme: Light</a></li>
+                <li><a class="dropdown-item" href="TextureEn.html">Theme: Dark</a></li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <img src="icons/logomarca.png" alt="Logomarca" style="margin:auto;">
+        </div>
+    </div>
+
+    <section id="resume" class="resume-section">
+        <h2>Texture-Liox62Pack</h2>
+        <div class="resume-item">
+            <h4>This texture was meticulously designed to provide a unique experience for Minecraft PvP. Using only the website’s color palette, every detail was carefully thought out to reflect the project’s visual identity, delivering a harmonious and functional design.
+
+                Combining aesthetics and performance, this texture is perfect for players looking to stand out and add personality to their gameplay while maintaining smooth performance and high quality. Every pixel was handcrafted, ensuring originality and a personal touch in every element.
+                
+                Ready to dominate PvP in style? This exclusive texture is your perfect choice!</h4>
+                <iframe src="https://www.youtube.com/embed/29-7U57j5J8">codes/</iframe>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="resume" class="resume-section">
+        <h2>Download the texture below:</h2> <br>
+           <a href="https://www.mediafire.com/file/yq9mn3xq983j0zd/Liox62_TexTure.rar/file">https://www.mediafire.com/file/yq9mn3xq983j0zd/Liox62_TexTure.rar/file</a>
+        </section>
+</body>
+</html>

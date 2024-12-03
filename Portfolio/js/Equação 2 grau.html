@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação 2º Grau</title>
+</head>
+<body>
+    <script>
+        function Equação(coeficientes) {
+            const [a, b, c] = coeficientes;
+            
+            const delta = b ** 2 - 4 * a * c;
+            
+            if (delta < 0) {
+                return "A equação não possui raízes reais.";
+            } else if (delta == 0) {
+                const raiz = -b / (2 * a);
+                return "A equação possui uma raiz real: x = "+raiz;
+            } else {
+                const raiz1 = (-b + Math.sqrt(delta)) / (2 * a);
+                const raiz2 = (-b - Math.sqrt(delta)) / (2 * a);
+                return "A equação possui duas raízes reais: x1 = "+raiz1+" x2 = "+raiz2;
+            }
+        }
+
+        const a=parseFloat(prompt("Digite o valor do coeficiente a"))
+        const b=parseFloat(prompt("Digite o valor do coeficiente b"))
+        const c=parseFloat(prompt("Digite o valor do coeficiente c"))
+
+        const coeficientes=[a,b,c]
+        document.write(Equação(coeficientes))
+        </script>
+</body>
+</html>

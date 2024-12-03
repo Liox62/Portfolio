@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem Alfabética</title>
+</head>
+<body>
+    <script>
+        let nomes=[]
+        for (let x = 0; x < 20; x++) {
+            let nome=prompt("Digite o "+x+"º nome");
+            nomes.push(nome);
+        }
+        nomes.sort()
+        document.write("<h3>Nomes em ordem alfabética:</h3>");
+        for (let x = 0; x < nomes.length; x++) {
+            document.write(nomes[x] + "<br>");
+        }
+    </script>
+</body>
+</html>

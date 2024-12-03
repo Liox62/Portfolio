@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numA = 10;
+        const notasA = 4;
+
+        var nomes = [], medias = [];
+
+        function calcularM(notas) {
+            let soma = 0;
+            for (let x = 0; x < notas.length; x++) {
+                soma += notas[x];
+            }
+            return soma / notas.length;
+        }
+
+        for (let x = 0; x < numA; x++) {
+            let nome = prompt("Digite o nome do aluno " + (x + 1) + ":");
+            nomes.push(nome);
+
+            let notas = [];
+            for (let y = 0; y < notasA; y++) {
+                let nota = parseFloat(prompt("Digite a nota " + (y + 1) + " de " + nome + ":"));
+                notas.push(nota);
+            }
+
+            medias.push(calcularM(notas));
+        }
+
+        document.write("<h2>Alunos</h2>");
+        for (let x = 0; x < numA; x++) {
+            document.write("Aluno: " + nomes[x] + " - Média: " + medias[x].toFixed(2) + "<br>");
+        }
+    </script>
+</body>
+</html>
